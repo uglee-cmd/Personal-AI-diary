@@ -7,7 +7,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 from telegram.error import TimedOut, NetworkError
 
 # --- Configuration ---
-TOKEN = "6126288301:AAFE6EYZjjcsJIYDNTCsH83JI6Mwz7s4wKg"  # Replace with your token
+TOKEN = "API KEY HERE"  # Replace with your token
 
 # Enable logging
 logging.basicConfig(
