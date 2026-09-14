@@ -1,13 +1,13 @@
 import logging
 import sqlite3
-import sys
+import os
 from datetime import datetime
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, ConversationHandler
 from telegram.error import TimedOut, NetworkError
 
 # --- Configuration ---
-TOKEN = "API KEY HERE"  # Replace with your token
+TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]  # Replace with your token
 
 # Enable logging
 logging.basicConfig(
