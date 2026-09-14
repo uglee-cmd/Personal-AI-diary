@@ -4,10 +4,9 @@ import os
 from datetime import datetime
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, ConversationHandler
-from telegram.error import TimedOut, NetworkError
 
 # --- Configuration ---
-TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]  # Replace with your token
+TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 
 # Enable logging
 logging.basicConfig(
@@ -15,6 +14,8 @@ logging.basicConfig(
     level=logging.INFO
 )
 logger = logging.getLogger(__name__)
+
+# ... rest of your code
 
 # Conversation states
 TITLE, BODY, REMINDER_TEXT, REMINDER_TIME = range(4)
